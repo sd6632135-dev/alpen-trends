@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpen Trends - Premium Auswahl</title>
+    <style>
+        /* كود التنسيق (الألوان والترتيب) */
+        :root { 
+            --bg: #f8f9fa; 
+            --amazon-blue: #232f3e; 
+            --accent: #d4af37; 
+            --amazon-yellow: #FFD814; 
+        }
+        body { 
+            background-color: var(--bg); 
+            color: #111; 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0;
+        }
+        header { 
+            background: var(--amazon-blue); 
+            color: white; 
+            padding: 40px 20px; 
+            text-align: center; 
+        }
+        header h1 { 
+            font-size: 2.5rem; 
+            color: var(--accent); 
+            margin: 0; 
+            letter-spacing: 2px;
+        }
+        .container { 
+            padding: 40px 5%; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+            max-width: 1200px;
+            margin: auto;
+        }
+        .product-card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 12px; 
+            text-align: center; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+            border: 1px solid #ddd; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .category-tag { 
+            background: #f0f0f0; 
+            color: #555;
+            font-size: 0.7rem; 
+            font-weight: bold; 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+            align-self: center; 
+            margin-bottom: 15px;
+        }
+        .product-card img { 
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+        }
+        .product-card h3 {
+            font-size: 1.1rem;
+            margin: 15px 0;
+            color: #222;
+        }
+        .btn-amazon { 
+            display: block; 
+            padding: 12px; 
+            background: var(--amazon-yellow); 
+            color: #000; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 25px; 
+            margin-top: 15px; 
+            border: 1px solid #FCD200; 
+            transition: background 0.2s;
+        }
+        .btn-amazon:hover {
+            background: #f7ca00;
+        }
+        footer { 
+            background: var(--amazon-blue); 
+            color: white; 
+            padding: 40px 20px; 
+            text-align: center; 
+            margin-top: 50px;
+        }
+        .footer-info { font-size: 0.9rem; color: #ccc; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ALPEN TRENDS</h1>
+    <p>Exklusive Gadgets & Trends für Österreich</p>
+</header>
+
+<div class="container">
+    <div class="product-card">
+        <span class="category-tag">HAUSHALT</span>
+        <img src="https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Heim">
+        <h3>Heißluftfritteuse Pro</h3>
+        <a href="https://www.amazon.de/b?node=95175896031&tag=alpenluxury26-21" target="_blank" class="btn-amazon">Zum Angebot</a>
+    </div>
+
+    <div class="product-card">
+        <span class="category-tag">HAUSTIERE</span>
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Hund">
+        <h3>Smart Pet Tracker GPS</h3>
+        <a href="https://www.amazon.de/b?node=95175896031&tag=alpenluxury26-21" target="_blank" class="btn-amazon">Zum Angebot</a>
+    </div>
+
+    <div class="product-card">
+        <span class="category-tag">FAHRRAD</span>
+        <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bike">
+        <h3>Fahrrad-Computer GPS</h3>
+        <a href="https://www.amazon.de/b?node=95175896031&tag=alpenluxury26-21" target="_blank" class="btn-amazon">Zum Angebot</a>
+    </div>
+
+    <div class="product-card">
+        <span class="category-tag">AUTO</span>
+        <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Car">
+        <h3>4K Dashcam Kamera</h3>
+        <a href="https://www.amazon.de/b?node=95175896031&tag=alpenluxury26-21" target="_blank" class="btn-amazon">Zum Angebot</a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-info">
+        <h4>Impressum</h4>
+        <p>Betreiber: Refat Alali | Standort: Wien, Österreich</p>
+        <p>Kontakt: sd6632135@gmail.com</p>
+        <p>&copy; 2026 Alpen Trends Store</p>
+    </div>
+</footer>
+
+</body>
+</html>
